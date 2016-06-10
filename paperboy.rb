@@ -28,7 +28,7 @@ end
     quota = (@experience /2) + 50
   end
 
-  # time for the next method, deliver.
+  # time for the next method, deliver. harder than i thought.
   def deliver(start_address, end_address)
 
     delivered = end_address - start_address
@@ -42,10 +42,31 @@ end
        puts "you made #{cash} dollars for today."
          experience = quota + (delivered/2)
          puts "your current experience is #{experience}"
+       end
 
 def report
   puts "Report for: #{@name}, #{@name} has #{@experience} and delivered #{delivered} papers today
   making #{cash} dollars for the day."
 
-  
+end
+#i am very confused at the moment. will resolve soon.
       end
+jason = Paperboy.new ("Jason"), #need to set up a paperboy, got confused brain system shutdown.)
+
+#will set up interactive system for paperboys to check daily earnings and new xp.
+#  def deliver(start_address, end_address)
+#    puts "ill need the start house number"
+#      start_address = gets.chomp.to_f
+#    puts "ill need the end house number"
+#      end_address = gets.chomp.to_f
+#    delivered = end_address - start_address
+#    puts  "you delivered #{delivered} papers today"
+#    if delivered >= quota
+#      do
+#        cash = (delivered * 0.25) + ((delivered - quota)*0.50
+#      else
+#         cash = ((delivered * 0.25) - 2)
+#       end
+#       puts "you made #{cash} dollars for today."
+#         experience = quota + (delivered/2)
+#         puts "your current experience is #{experience}"
