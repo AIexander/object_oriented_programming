@@ -13,7 +13,6 @@ def learn
 end
 
 class Instructor < Person
-  attr_accessor :teach, :name
   def teach
     puts "Everything in Rooby is an 0bject!"
 end
