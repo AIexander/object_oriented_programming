@@ -51,7 +51,6 @@ class Paperboy
     making #{@cash} dollars for the day."
 
   end
-#i am very confused at the moment. will resolve soon.
 end
 
 jason = Paperboy.new ("Jason") #need to set up a paperboy, got confused brain system shutdown.)
