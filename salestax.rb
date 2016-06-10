@@ -1,12 +1,15 @@
 class Item
-  attr_accessor :name, :cost, :importax, :salestax
+  attr_accessor :name, :cost, :price, :importax, :salestax
   def initialize(name, price)
     @name = name
-    @price = 0
+    @price = price
     @importax = price * 0.05
     @salestax = price * 0.10
     @cost = @price + @importax + @salestax
-  end
 
-  jetski = Item.new ("Jetski", 1000
-  )
+    puts " #{@name} will cost #{@cost} $"
+  end
+end
+
+  jetski = Item.new("Jetski", 50)
+#turns out i kept forgetting i had a space between item.new and jetski, broke whole thing.
