@@ -11,3 +11,12 @@
 #also i dont think i need to have earnings in both the
 #accessor and reader so im going to delete it from the
 #accessor.
+
+#ok lets make an initializer then we will worry about
+# getting the other methods set up etc..
+def initialize
+  @name = name
+  @experience = experience
+  @side = side
+  @quota = quota
+  @earnings = earnings
