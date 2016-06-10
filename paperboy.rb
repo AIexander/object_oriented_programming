@@ -26,7 +26,7 @@ class Paperboy
 
   #paperboy quota just realized that is a formula.
   #i think (experience / 2) + 50 seems about right, i almost just set it to 50 lol.
-  def paperboy_quota_method
+  def update_quota
     @quota = (@experience /2) + 50
   end
 
@@ -43,6 +43,7 @@ class Paperboy
     puts "you made #{@cash} dollars for today."
     @experience += @delivered
     puts "your current experience is #{@experience}"
+    update_quota
   end
 
   def report
